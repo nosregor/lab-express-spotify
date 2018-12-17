@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Track Number</th>
+      <th scope="col">Title</th>
+      <th scope="col">Listen</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each track}}
+    <tr>
+      <th scope="row">{{this.track_number}}</th>
+
+      <td>{{this.name}}</td>
+      <td><audio src="{{this.preview_url}}" controls></audio></td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
